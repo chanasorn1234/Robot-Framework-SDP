@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.1 on win32)" generated="20220408 14:29:44.729" rpa="false" schemaversion="3">
+<suite id="s1" name="Test-Signin" source="C:\Users\Keroro\Desktop\Robot Framework\test-signin.robot">
+<test id="s1-t1" name="T0001 Sign-in valid with username and password" line="21">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:44.914" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:44.914" endtime="20220408 14:29:46.372"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:46.379" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:46.373" endtime="20220408 14:29:46.379"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_username}</arg>
+<arg>cekmitl</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:46.380" level="INFO">Typing text 'cekmitl' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:46.379" endtime="20220408 14:29:46.469"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_password}</arg>
+<arg>ecc56789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:46.470" level="INFO">Typing text 'ecc56789' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:46.469" endtime="20220408 14:29:46.547"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:46.548" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:46.548" endtime="20220408 14:29:46.595"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:46.599" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:46.596" endtime="20220408 14:29:46.599"/>
+</kw>
+<tag>successful-case</tag>
+<status status="PASS" starttime="20220408 14:29:44.913" endtime="20220408 14:29:46.599"/>
+</test>
+<test id="s1-t2" name="T0002 Sign-in valid with username and password" line="31">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:46.601" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:46.601" endtime="20220408 14:29:48.080"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:48.087" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:48.081" endtime="20220408 14:29:48.087"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_username}</arg>
+<arg>cekmitl</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:48.088" level="INFO">Typing text 'cekmitl' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:48.087" endtime="20220408 14:29:48.178"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:48.179" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:48.178" endtime="20220408 14:29:48.223"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${alert_box_error}</arg>
+<arg>Please enter your password!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220408 14:29:48.248" level="INFO">Element '//*[@class="error-message"]' contains text 'Please enter your password!'.</msg>
+<status status="PASS" starttime="20220408 14:29:48.225" endtime="20220408 14:29:48.248"/>
+</kw>
+<tag>failed-case</tag>
+<status status="PASS" starttime="20220408 14:29:46.600" endtime="20220408 14:29:48.248"/>
+</test>
+<test id="s1-t3" name="T0003 Sign-in valid with username and password" line="40">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:48.251" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:48.250" endtime="20220408 14:29:49.728"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:49.735" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:49.729" endtime="20220408 14:29:49.735"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_username}</arg>
+<arg>cekmitl_x</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:49.736" level="INFO">Typing text 'cekmitl_x' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:49.736" endtime="20220408 14:29:49.830"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:49.830" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:49.830" endtime="20220408 14:29:49.871"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${alert_box_error}</arg>
+<arg>Please enter your password!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220408 14:29:49.891" level="INFO">Element '//*[@class="error-message"]' contains text 'Please enter your password!'.</msg>
+<status status="PASS" starttime="20220408 14:29:49.872" endtime="20220408 14:29:49.892"/>
+</kw>
+<tag>failed-case</tag>
+<status status="PASS" starttime="20220408 14:29:48.250" endtime="20220408 14:29:49.892"/>
+</test>
+<test id="s1-t4" name="T0004 Sign-in valid with username and password" line="48">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:49.894" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:49.894" endtime="20220408 14:29:51.306"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:51.312" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:51.306" endtime="20220408 14:29:51.312"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_password}</arg>
+<arg>ecc56789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:51.313" level="INFO">Typing text 'ecc56789' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:51.313" endtime="20220408 14:29:51.414"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:51.415" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:51.415" endtime="20220408 14:29:51.462"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${alert_box_error}</arg>
+<arg>Please enter your username!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220408 14:29:51.483" level="INFO">Element '//*[@class="error-message"]' contains text 'Please enter your username!'.</msg>
+<status status="PASS" starttime="20220408 14:29:51.462" endtime="20220408 14:29:51.483"/>
+</kw>
+<tag>failed-case</tag>
+<status status="PASS" starttime="20220408 14:29:49.893" endtime="20220408 14:29:51.483"/>
+</test>
+<test id="s1-t5" name="T0005 Sign-in valid with username and password" line="56">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:51.485" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:51.485" endtime="20220408 14:29:52.964"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:52.971" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:52.964" endtime="20220408 14:29:52.971"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_password}</arg>
+<arg>ecc56789_x</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:52.973" level="INFO">Typing text 'ecc56789_x' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:52.972" endtime="20220408 14:29:53.069"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:53.070" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:53.069" endtime="20220408 14:29:53.111"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${alert_box_error}</arg>
+<arg>Please enter your username!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220408 14:29:53.130" level="INFO">Element '//*[@class="error-message"]' contains text 'Please enter your username!'.</msg>
+<status status="PASS" starttime="20220408 14:29:53.111" endtime="20220408 14:29:53.130"/>
+</kw>
+<tag>failed-case</tag>
+<status status="PASS" starttime="20220408 14:29:51.484" endtime="20220408 14:29:53.131"/>
+</test>
+<test id="s1-t6" name="T0006 Sign-in valid with username and password" line="64">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:53.133" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:53.132" endtime="20220408 14:29:54.510"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:54.517" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:54.511" endtime="20220408 14:29:54.517"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_username}</arg>
+<arg>cekmitl</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:54.518" level="INFO">Typing text 'cekmitl' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:54.518" endtime="20220408 14:29:54.609"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_password}</arg>
+<arg>ecc56789_x</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:54.609" level="INFO">Typing text 'ecc56789_x' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:54.609" endtime="20220408 14:29:54.696"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:54.697" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:54.697" endtime="20220408 14:29:54.733"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${alert_box_error}</arg>
+<arg>Please enter valid username and password!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220408 14:29:54.753" level="INFO">Element '//*[@class="error-message"]' contains text 'Please enter valid username and password!'.</msg>
+<status status="PASS" starttime="20220408 14:29:54.733" endtime="20220408 14:29:54.753"/>
+</kw>
+<tag>failed-case</tag>
+<status status="PASS" starttime="20220408 14:29:53.132" endtime="20220408 14:29:54.754"/>
+</test>
+<test id="s1-t7" name="T0007 Sign-in valid with username and password" line="74">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url_signin}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 14:29:54.756" level="INFO">Opening browser 'chrome' to base url 'https://test-robot-framework-g1-07.netlify.app/'.</msg>
+<status status="PASS" starttime="20220408 14:29:54.755" endtime="20220408 14:29:56.212"/>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Test Robot</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220408 14:29:56.219" level="INFO">Page title is 'Test Robot'.</msg>
+<status status="PASS" starttime="20220408 14:29:56.213" endtime="20220408 14:29:56.219"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_username}</arg>
+<arg>cekmitl_x</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:56.220" level="INFO">Typing text 'cekmitl_x' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:56.219" endtime="20220408 14:29:56.324"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${textbox_password}</arg>
+<arg>ecc56789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:56.325" level="INFO">Typing text 'ecc56789' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:56.325" endtime="20220408 14:29:56.416"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 14:29:56.417" level="INFO">Clicking element '//*[@class="buttsubmit"]'.</msg>
+<status status="PASS" starttime="20220408 14:29:56.416" endtime="20220408 14:29:56.456"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${alert_box_error}</arg>
+<arg>Please enter valid username and password!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220408 14:29:56.478" level="INFO">Element '//*[@class="error-message"]' contains text 'Please enter valid username and password!'.</msg>
+<status status="PASS" starttime="20220408 14:29:56.456" endtime="20220408 14:29:56.478"/>
+</kw>
+<tag>failed-case</tag>
+<status status="PASS" starttime="20220408 14:29:54.755" endtime="20220408 14:29:56.479"/>
+</test>
+<status status="PASS" starttime="20220408 14:29:44.730" endtime="20220408 14:29:56.480"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="6" fail="0" skip="0">failed-case</stat>
+<stat pass="1" fail="0" skip="0">successful-case</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Test-Signin">Test-Signin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
