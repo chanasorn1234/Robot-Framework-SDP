@@ -1,0 +1,47 @@
+.Form{
+    background-color: rgba(240, 248, 255, 0.499);
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.logintitle{
+    color: rgb(104, 74, 255);
+}
+.Form li{
+    list-style: none;
+}
+.content,.contentinput{
+    display: inline;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+.content{
+    color: green;
+}
+.contentinput{
+
+    margin-left: 10px;
+    border-style: groove;
+    border-radius: 5px;
+    height: 20px;
+}
+.contentinput:hover{
+    background-color: rgba(255, 166, 0, 0.619) ;
+}
+.contentinput:focus{
+    background-color: orange;
+}
+.buttsubmit{
+    margin-top: 15px;
+    background-color: rgb(0, 4, 253);
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    
+}
