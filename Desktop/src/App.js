@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App"> 
       <br></br>
-      <Router>
+      <Router basename='/'>
         <Routes>
           <Route path='/' exact element={<Form_login/>}/>
           <Route path='/welcome' exact element={<Welform/>}/>
